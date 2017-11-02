@@ -131,10 +131,6 @@ clean documentation build. See our contributors guide for [our style
 guide](https://docs.docker.com/opensource/doc-style) and instructions on [building
 the documentation](https://docs.docker.com/opensource/project/test-and-docs/#build-and-test-the-documentation).
 
-Write clean code. Universally formatted code promotes ease of writing, reading,
-and maintenance. Always run `gofmt -s -w file.go` on each changed file before
-committing your changes. Most editors have plug-ins that do this automatically.
-
 Pull request descriptions should be as clear as possible and include a reference
 to all the issues that they address.
 
@@ -150,7 +146,7 @@ but the reviewers are notified only when you comment.
 Pull requests must be cleanly rebased on top of master without multiple branches
 mixed into the PR.
 
-**Git tip**: If your PR no longer merges cleanly, use `rebase master` in your
+**Git tip**: If your PR no longer merges cleanly, use `git rebase upstream/develop` in your
 feature branch to update your pull request rather than `merge master`.
 
 Before you make a pull request, squash your commits into logical units of work
